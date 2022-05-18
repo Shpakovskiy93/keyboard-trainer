@@ -1,0 +1,175 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.devider {
+	border-top: 1px solid #eee;
+	padding-bottom: 30px;
+}
+.hidden {
+	display: none;
+}
+.results-title {
+	display: -webkit-box;
+	display: flex;
+	font-family: "PT Mono", monospace;
+	margin-bottom: 15px;
+	font-weight: 600;
+	color: #5c8dcb;
+}
+.logo {
+	display: inline-block;
+	margin: 0 auto;
+	font-family: "PT Mono", monospace;
+	font-weight: 900;
+	font-size: 38px;
+	padding: 50px 0;
+}
+.indicators {
+	display: -webkit-box;
+	display: flex;
+	border-radius: 8px;
+	border: 1px solid #d9d9d9;
+	margin-bottom: 35px;
+	padding-left: 5px;
+	padding-right: 5px;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.indicator {
+	display: -webkit-box;
+	display: flex;
+	font-size: 12px;
+	font-family: "PT Mono", monospace;
+	border-right: 1px solid #d9d9d9;
+	padding: 10px;
+}
+.indicator:last-child {
+	border-right: none;
+}
+.indicator__icon {
+	margin-right: 20px;
+}
+.indicator__icon {
+	color: #0070ff;
+}
+.indicator__icon--errors {
+	color: #e50909;
+}
+.input {
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	border: 3px solid transparent;
+	border-bottom: 1px dotted #000;
+	outline: none;
+	font-family: "PT Mono", monospace;
+	font-size: 18px;
+	transition: all 0.1s ease-in;
+}
+.input.blur {
+	border: 3px solid black;
+}
+.input.error {
+	background-color: #fff000;
+}
+.text {
+	font-family: "PT Mono", monospace;
+	font-size: 18px;
+	margin-bottom: 35px;
+}
+.text .line {
+	height: 1.5em;
+	margin-bottom: 1px;
+}
+.text .done {
+	color: #d9d9d9;
+}
+.text .hint {
+	background-color: #fff000;
+}
+.text.error {
+	color: #ff0000;
+}
+.keyboard .line {
+	display: -webkit-box;
+	display: flex;
+}
+.keyboard .line div {
+	width: 49px;
+	height: 49px;
+	line-height: 42px;
+	font-size: 15px;
+	border: 1px solid #c7d0d4;
+	background: #fff;
+	margin: 1px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 5px;
+}
+.keyboard .line div.hint {
+	background: #c7d0d4;
+}
+.keyboard .line .backspace {
+	width: 75px;
+	text-align: right;
+	color: #ddd;
+	font-size: 10px;
+}
+.keyboard .line .tab {
+	width: 75px;
+	text-align: left;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .caps {
+	width: 87px;
+	text-align: left;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .enter {
+	width: 88px;
+	text-align: right;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .shift {
+	width: 113px;
+	text-align: left;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .shift:last-child {
+	text-align: right;
+}
+.keyboard .line .space {
+	margin-left: auto;
+	width: 312px;
+	text-align: right;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .alt {
+	width: 88px;
+	text-align: right;
+	color: #95a0a4;
+	font-size: 10px;
+	margin-right: auto;
+}
+.pressed {
+    background-color: #c7d0d4 !important;
+}
